@@ -8,9 +8,13 @@
     "jest": "^18.1.0"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest unit --coverage"
   },
   "jest": {
-    "collectCoverageFrom": ["src/**/*.{js}"]
+    "testEnvironment": "node",
+    "testPathDirs": [
+      "test"
+    ],
+    "collectCoverageFrom": ["src/**/*.js"]
   }
 }
